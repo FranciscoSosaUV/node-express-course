@@ -48,6 +48,18 @@ const mockUserData=[ //JSON
         }
    })
 
+   app.post ('/city', function(req,res){//Post add city by Francisco Sosa
+        const city=req.body.city;
+
+        
+            res.json({
+                success: true,
+                message: 'City added successully!.. city added: '+req.body.city,
+                token: 'RT@$%8335002GTR'
+            })
+            
+    })
+
 
 app.listen(8000,function(){
     console.log("server is running")  // iniciará el servidor localmente en el puerto que proporcione como primer argumento 
